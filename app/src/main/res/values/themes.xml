@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TraceDroid" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#1F6F8B</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#C3E8F7</item>
+        <item name="colorOnPrimaryContainer">#001F29</item>
+        <item name="colorSecondary">#4D616C</item>
+        <item name="colorTertiary">#5D5B7D</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

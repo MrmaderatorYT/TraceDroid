@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TraceDroid</string>
+
+    <!-- severity -->
+    <string name="sev_none">none</string>
+    <string name="sev_info">informational</string>
+    <string name="sev_low">low</string>
+    <string name="sev_medium">medium</string>
+    <string name="sev_high">high</string>
+    <string name="sev_critical">critical</string>
+
+    <!-- cases -->
+    <string name="cases_title">Forensic cases</string>
+    <string name="cases_empty">No cases yet.\nCreate one to import Windows event logs, Sigma rules and YARA rules. Everything stays on this device.</string>
+    <string name="new_case">New case</string>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="delete_case">Delete case</string>
+    <string name="delete_case_message">Permanently delete \"%1$s\" with all imported evidence copies, rules and its index? The original files are not touched.</string>
+    <string name="hint_case_name">Case name</string>
+    <string name="hint_examiner">Examiner</string>
+    <string name="hint_notes">Notes</string>
+    <string name="case_default_name">Case %1$s</string>
+    <string name="case_meta">%1$screated %2$s UTC</string>
+    <string name="case_evidence_counts">%1$d EVTX  ·  %2$d Sigma files  ·  %3$d YARA files</string>
+    <string name="case_info">Examiner: %1$s  ·  created %2$s UTC</string>
+    <string name="examiner_unknown">not recorded</string>
+
+    <!-- navigation -->
+    <string name="nav_overview">Case</string>
+    <string name="nav_timeline">Timeline</string>
+    <string name="nav_graph">Graph</string>
+    <string name="nav_yara">YARA</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- operations -->
+    <string name="op_opening">Opening case…</string>
+    <string name="op_importing">Importing…</string>
+    <string name="op_copying">Copying %1$s</string>
+    <string name="op_parsing">Parsing event logs</string>
+    <string name="op_parsing_file">Parsing %1$s</string>
+    <string name="op_saving_index">Saving index</string>
+    <string name="op_sigma">Evaluating Sigma rules</string>
+    <string name="op_yara_compile">Compiling YARA rules</string>
+    <string name="op_yara_scan">YARA scan</string>
+    <string name="op_working">Working…</string>
+    <string name="status_percent">%1$s  %2$d%%</string>
+
+    <!-- messages -->
+    <string name="msg_failed">Operation failed: %1$s</string>
+    <string name="msg_cancelled">Cancelled</string>
+    <string name="msg_events_added">%1$d events indexed</string>
+    <string name="msg_ingest_failed">%1$s could not be parsed: %2$s</string>
+    <string name="msg_ingest_damage">%1$s: %2$d damaged records and %3$d damaged chunks were skipped</string>
+    <string name="msg_files_imported">%1$d files imported</string>
+    <string name="msg_rules_loaded">%1$d Sigma rules loaded</string>
+    <string name="msg_yara_rules">%1$d YARA rules compiled</string>
+
+    <!-- overview -->
+    <string name="section_evidence">Evidence</string>
+    <string name="section_index">Event index</string>
+    <string name="section_sigma">Sigma detections</string>
+    <string name="import_evtx">Import .evtx</string>
+    <string name="import_sigma">Import rules</string>
+    <string name="import_sigma_dir">Import rule folder</string>
+    <string name="rescan">Re-scan</string>
+    <string name="clear_rules">Clear rules</string>
+    <string name="rebuild_index">Rebuild index</string>
+    <string name="custody_log">Chain of custody</string>
+    <string name="label_events">Events</string>
+    <string name="label_sysmon">Sysmon</string>
+    <string name="label_processes">Process creations</string>
+    <string name="label_index_size">Index size</string>
+    <string name="no_events">No events indexed yet</string>
+    <string name="no_evidence">No evidence imported yet</string>
+    <string name="time_range">%1$s  →  %2$s UTC</string>
+    <string name="sigma_status">%1$s rules  ·  %2$s alerts on %3$s events</string>
+    <string name="skipped_rules">%1$d rules skipped</string>
+    <string name="skipped_title">Rules not loaded</string>
+    <string name="rule_meta">%1$s  ·  %2$s hits</string>
+    <string name="no_rules">Import a Sigma rule pack (.yml) to detect suspicious activity.</string>
+    <string name="no_alerts">No rule matched the indexed events.</string>
+
+    <!-- timeline -->
+    <string name="search_hint">Keyword or regex</string>
+    <string name="event_id_hint">Event ID</string>
+    <string name="regex">Regex</string>
+    <string name="filter_all">All</string>
+    <string name="filter_alerts">Alerts</string>
+    <string name="filter_low">Low+</string>
+    <string name="filter_medium">Medium+</string>
+    <string name="filter_high">High+</string>
+    <string name="filter_critical">Critical</string>
+    <string name="result_count">%1$s events</string>
+    <string name="event_heading">Event %1$d  ·  %2$s</string>
+    <string name="sigma_alerts">Sigma alerts</string>
+    <string name="event_fields">Fields</string>
+    <string name="evidence_file">Evidence file</string>
+    <string name="raw_xml">Raw event XML</string>
+
+    <!-- graph -->
+    <string name="layout_tree">Tree</string>
+    <string name="layout_force">Force</string>
+    <string name="graph_network">Network</string>
+    <string name="graph_dns">DNS</string>
+    <string name="fit">Fit</string>
+    <string name="graph_empty">No process creation events (Sysmon 1 / Security 4688) to graph</string>
+    <string name="graph_summary">%1$s nodes  ·  %2$s edges</string>
+    <string name="graph_truncated">truncated, raise the alert filter</string>
+    <string name="graph_force_fallback">graph too large for force layout</string>
+    <string name="graph_view_description">Process and network graph. Drag to pan, pinch to zoom, tap a node to inspect it.</string>
+    <string name="node_process">Process</string>
+    <string name="node_network">Network connection</string>
+    <string name="node_dns">DNS query</string>
+    <string name="node_synthetic">no creation record in dataset</string>
+    <string name="node_details">Details</string>
+    <string name="node_started">Started (UTC)</string>
+    <string name="node_ended">Terminated (UTC)</string>
+    <string name="node_first_seen">First seen (UTC)</string>
+    <string name="node_count">Occurrences</string>
+    <string name="node_activity">Activity</string>
+    <string name="node_activity_value">%1$d child processes, %2$d destinations, %3$d DNS names</string>
+    <string name="node_parent_chain">Parent chain</string>
+    <string name="no_alerts_node">No Sigma alert is attributed to this node.</string>
+    <string name="open_event">Open event</string>
+
+    <!-- yara -->
+    <string name="section_yara_rules">Rules</string>
+    <string name="section_yara_scan">Scan artifacts</string>
+    <string name="import_yara">Import .yar</string>
+    <string name="import_yara_dir">Import folder</string>
+    <string name="scan_files">Scan files</string>
+    <string name="scan_folder">Scan folder</string>
+    <string name="yara_no_rules">No YARA rules compiled. Import .yar / .yara files first.</string>
+    <string name="yara_rules_loaded">%1$d rules compiled and ready</string>
+    <string name="yara_unavailable">This build does not include libyara.</string>
+    <string name="yara_compile_errors">%1$d compile errors</string>
+    <string name="yara_errors_title">YARA compile errors</string>
+    <string name="yara_scan_error">Scan failed</string>
+    <string name="yara_no_match">No rule matched</string>
+    <string name="yara_timeout">scan timed out before completion</string>
+    <string name="yara_summary">%1$d artifacts scanned (%2$s)  ·  %3$d with matches</string>
+    <string name="yara_more_strings">… and %1$d more string matches</string>
+    <string name="yara_empty">Scan results appear here. Artifacts are read in place through a file descriptor and are never uploaded anywhere.</string>
+</resources>

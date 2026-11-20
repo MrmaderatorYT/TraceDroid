@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="seed">#1F6F8B</color>
+    <color name="sev_none">#8A9099</color>
+    <color name="sev_info">#4A90D9</color>
+    <color name="sev_low">#3FA66B</color>
+    <color name="sev_medium">#E0A100</color>
+    <color name="sev_high">#E8702A</color>
+    <color name="sev_critical">#D32F2F</color>
+    <color name="node_network">#5C7CFA</color>
+    <color name="node_dns">#12A594</color>
+    <color name="launcher_background">#0E2A36</color>
+</resources>
