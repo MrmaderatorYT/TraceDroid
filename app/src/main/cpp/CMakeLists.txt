@@ -1,7 +1,7 @@
 # TraceDroid native forensic core.
 # Copyright (C) CyberCraft Studio. GNU GPL v3.0 or later.
 cmake_minimum_required(VERSION 3.22.1)
-project(tracedroid LANGUAGES C CXX)
+project(TraceDroid LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -39,10 +39,10 @@ find_package(Threads REQUIRED)
 target_link_libraries(tdcore PUBLIC Threads::Threads)
 
 if(ANDROID)
-    add_library(tracedroid SHARED jni/JniBridge.cpp)
-    target_compile_options(tracedroid PRIVATE -Wall -Wextra -Wno-unused-parameter)
-    target_link_libraries(tracedroid PRIVATE tdcore log)
-    target_link_options(tracedroid PRIVATE -Wl,--gc-sections -Wl,--exclude-libs,ALL)
+    add_library(TraceDroid SHARED jni/JniBridge.cpp)
+    target_compile_options(TraceDroid PRIVATE -Wall -Wextra -Wno-unused-parameter)
+    target_link_libraries(TraceDroid PRIVATE tdcore log)
+    target_link_options(TraceDroid PRIVATE -Wl,--gc-sections -Wl,--exclude-libs,ALL)
 else()
     # Host build: self-test binary used during development (cmake -S app/src/main/cpp -B build-host).
     add_executable(td_selftest tests/selftest.cpp)

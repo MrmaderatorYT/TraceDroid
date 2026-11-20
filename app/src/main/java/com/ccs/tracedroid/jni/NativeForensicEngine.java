@@ -36,7 +36,7 @@ public final class NativeForensicEngine implements AutoCloseable {
     private static final int PAGE_BUFFER_BYTES = 512 * 1024;
 
     static {
-        System.loadLibrary("tracedroid");
+        System.loadLibrary("TraceDroid");
     }
 
     private final ReentrantReadWriteLock lifecycle = new ReentrantReadWriteLock();
