@@ -26,7 +26,7 @@ be crafted to attack the analyst's tooling.
 5. **License.** GPL-3.0-or-later. Every source file starts with the two-line header used
    throughout the tree. New third-party code must be GPL-compatible and vendored or
    fetched at a pinned version.
-6. **Identity.** Application id `com.ccs.chronosec`, Java namespace `com.ccs.tracedroid`.
+6. **Identity.** Application id and Java namespace are both `com.ccs.tracedroid`.
    Do not rename either.
 
 ## Build and test

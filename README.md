@@ -7,7 +7,7 @@ artifacts with YARA and reconstructs process / network graphs — entirely on th
 There is no network permission, no telemetry and no cloud dependency; the build fails if any
 dependency tries to add a network permission (`verifyOffline*` Gradle tasks).
 
-* Application id: `com.ccs.chronosec` · Java namespace: `com.ccs.tracedroid`
+* Application id: `com.ccs.tracedroid` · Java namespace: `com.ccs.tracedroid`
 * UI: Java 17, Material 3 (no Kotlin sources, no Kotlin Gradle plugin)
 * Core: C++20 via the NDK (`arm64-v8a`, `x86_64`)
 * License: GNU GPL v3.0 or later (see `LICENSE`); bundles libyara (BSD-3-Clause)
